@@ -20,7 +20,9 @@ class CountryFlag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final src = FlagStore().getSvgSrc(countryCode ?? 'Placeholder');
+    final src = prefix + FlagStore().getSvgSrc(countryCode ?? 'Placeholder');
     return SvgPicture.asset(src, fit: fit, alignment: alignment, width: width, height: height,);
   }
 }
+
+const prefix = 'packages/country_flag_package/';
