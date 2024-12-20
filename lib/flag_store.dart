@@ -1,3 +1,5 @@
+
+import 'dart:math';
 class FlagStore {
   FlagStore._internal();
 
@@ -7,6 +9,8 @@ class FlagStore {
 
   String getSvgSrc(String countryCode) =>
       _codeFlagMap[countryCode] ?? _codeFlagMap['PLACEHOLDER']!;
+
+  String getRandomCountryCode() => _codeFlagMap.keys[Random().nextInt(_codeFlagMap.length)] ?? '';
 
   final Map<String, String> _codeFlagMap = {
     "AD": "assets/flags/AD.svg",
@@ -245,4 +249,8 @@ class FlagStore {
     "PLACEHOLDER" : 'assets/flags/Placeholder.svg',
   };
 
+}
+
+extension _Subscript<T> on Iterable<T>{
+  T? operator [](int index) => index >length ? null : elementAt(index);
 }

@@ -1,4 +1,4 @@
-import 'package:country_flag_package/code_flag_map.dart';
+import 'package:country_flag_package/flag_store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
