@@ -177,7 +177,6 @@ class FlagStore {
     "PH": "assets/flags/PH.svg",
     "PK": "assets/flags/PK.svg",
     "PL": "assets/flags/PL.svg",
-    "PM": "assets/flags/PM.svg",
     "PN": "assets/flags/PN.svg",
     "PR": "assets/flags/PR.svg",
     "PS": "assets/flags/PS.svg",
